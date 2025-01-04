@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border: 20px solid gray;
+    border-top: 20px solid black;
+    border-radius: 50%;
+    animation: spinLoader 1s ease-in-out 0s infinite normal;
+    margin-left: 40%;
+    margin-top: 200px;
+
+
+}
+h2{
+    text-align: center;
+    display: inline-block;
+    margin-top: 450px;
+    margin-left: -10%;
+}
+@keyframes spinLoader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
